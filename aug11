@@ -1,0 +1,21 @@
+include <stdio.h>
+
+int main() 
+{
+   int r,k=1,i,j,num;
+   scanf("%d%d",&r,&num);
+   
+   for ( i = 1; i <= r; i++) 
+   {
+        for ( j = 1; j<=i; ++j) 
+        {
+            printf("%d ",k);
+            ++k;
+        }
+        if(k>=num+1)
+        break;
+        printf("\n");
+    
+   }
+   return 0;
+}
