@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,j;
+    printf("enter n value: ");
+    scanf("%d",&n);
+    int r,c;
+    for(r=1;r<=n;r++)
+    {
+        for(c=1;c<=n;c++)
+        {
+            printf("%d\t",r*c);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
