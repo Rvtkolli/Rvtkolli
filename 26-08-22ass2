@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char s[20];
+int i,c=0,s=0,k=0;
+printf("enter a string\n");
+gets(s);
+for(i=0;s[i]!='\0';i++)
+{
+if(isupper(s[i]))
+c++;
+else if(islower(s[i]))
+s++;
+else if(isdigit(s[i]))
+K++;
+}
+printf("upper case: %d\n",c);
+printf("lower case: %d\n",s);
+printf("numbers: %d\n",k);
+}
