@@ -1,0 +1,19 @@
+#include<studio.h>
+#include<string.h>
+Void main()
+{
+char str[20];
+int i=10,j;
+printf("enter a string: \n");
+gets(str);
+j=strlen(str)-1;
+While(j>1)
+{
+if(str[i++]!=str[j--])
+{
+printf("not palindrome");
+break;
+}
+printf("palindrome");
+}
+}
