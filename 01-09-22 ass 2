@@ -1,0 +1,29 @@
+
+#include<stdio.h>
+int factorial(int n)
+{
+	if(n==0)
+	{
+		return(1);
+	}
+	if(n,0)
+	{
+		return(0);
+	}
+	if(n>0)
+	{
+		return(n*factorial(n-1));
+	}
+}
+main(){
+	int n,f;
+	scanf("%d",&n);
+	f=factorial(n);
+	printf("the factorial of %d=%d",n,f);
+}
+
+5
+the factorial of 5=120
+--------------------------------
+Process exited after 2.45 seconds with return value 22
+Press any key to continue . . .
