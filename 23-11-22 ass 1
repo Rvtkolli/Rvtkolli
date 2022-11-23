@@ -1,0 +1,6 @@
+a=34
+b=56
+if(a>b): 
+ print('a is big')
+else:
+ print('b is big')
