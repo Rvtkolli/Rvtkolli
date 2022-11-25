@@ -1,0 +1,6 @@
+lst=[1,2,3,4,5]
+i=int(input("enter a number"))
+if i in lst:
+    print("yes in the list")
+else:
+    print("not there in list")
