@@ -1,0 +1,6 @@
+lst=[1,2,3,4,0,5]
+min=lst[0]
+for i in lst:
+    if i<min:
+        min=i
+print("min value",min)
