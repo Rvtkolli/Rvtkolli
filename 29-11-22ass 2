@@ -1,0 +1,32 @@
+empno=int(input ('enter no'))
+empname=input('enter name ')
+empdesg=input('enter desg')
+salary=int(input ('enter salary'))
+da=int(input('enter da'))
+ta=int(input ('enter ta'))
+hra=int(input ('enter hra'))
+netsalary=salary+da+ta+hra
+print('empno',empno)
+print('empname',empname)
+print('empdesg',empdesg)
+print ('salary',salary)
+print('da',da)
+print('ta',ta)
+print('hra',hra)
+print('netsalary',netsalary)
+print('tax:')
+if netsalary>100000:
+  tax=netsalary*10/100
+  print('100000')
+elif netsalary>50000:
+  tax=netsalary*7/100
+  print('50000')  
+elif netsalary>40000:
+  tax=netsalary*4/100
+  print ('40000')
+elif netsalary>20000:
+  tax=netsalary*2/100
+  print('20000')
+elif netsalary<20000:
+  tax=netsalary*0/100
+  print('tax',tax)
