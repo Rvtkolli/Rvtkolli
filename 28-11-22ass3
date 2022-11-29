@@ -1,0 +1,9 @@
+balance=1000
+amount=int(input('enter amount'))
+if(amount<balance):
+    print('insufficient balance in your account')
+    print('please try again')
+else:
+    d=balance+amount
+    print('credited amount:',amount)
+    print('Main balance:',d)
