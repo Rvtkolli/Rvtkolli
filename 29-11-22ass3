@@ -1,0 +1,15 @@
+no=int(input('enter no'))
+ssname=input('enter name:')
+group=input ('enter group:')
+gender=input('enter gender:')
+s1=int(input ('maths marks'))
+S2=int(input ('stat marks'))
+S3=int(input ('cs marks'))
+print('sno:',sno)
+print('name:',name)
+print('group:', group)
+print('gender:',gender)
+if s1>35 and S2>35 and S3>35:
+ print('pass')
+else:
+ print('fail')
