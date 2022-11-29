@@ -1,0 +1,7 @@
+pin=3429
+a=int(input('enter a value='))
+if(a==pin):
+    print('transaction running successfully')
+else:
+    print('incorrect pin number')
+    print('please try again')
