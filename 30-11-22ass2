@@ -1,0 +1,36 @@
+#preparing Bill
+vbc=200
+cbc=250
+mbc=350
+rice=60
+wb=25
+cphno=input('Enter Customer phone number:')
+cname=input('Enter Customer name:')
+caddr=input('Enter customer address:')
+bq=int(input('How many Birayani packets you want!'))
+cbq=int(input('How many Chicken Birayani packets you want!'))#0
+mbq=int(input('How many Mottun Birayani packets you want!'))#0
+rq=int(input('How many Rice packets you want!'))
+wbq=int(input('How many Water Bottles you want!'))#1
+coupon=input('Enter coupon code in capital letters:')
+bill=(bq*vbc)+(cbq*cbc)+(mbq*mbc)+(rice*rq)+(wb*wbq)
+if coupon =='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS' and bill>=1000:
+    dis=bill*5/100  
+else:
+    dis=0
+print('Discount:',dis)
+bill=bill-dis
+print('Customer phonenumber:',cphno)
+print('Customer Name:',cname)
+print('Customer address:',caddr)
+print('Bill amount:',bill)
