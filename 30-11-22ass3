@@ -1,0 +1,22 @@
+pno=int(input ('enter person no'))
+pname=input ('enter person name')
+pphno=int( input ('enter phone number '))
+paddr=input ('enter address')
+units=int(input ('enter no unit'))
+rate=int(input ('enter rate'))
+bill=units*rate
+if bill>=30:
+  amt=units*1.95
+elif bill>=75:
+  amt=units*3.00
+elif bill>=225:
+   amt=units*4.50
+elif bill>=400:
+   amt=units*6.00
+else:
+   amt=0
+print('person no',pno)
+print('person name',pname)
+print('phone number',pphno)
+print('amt',amt)
+print('bill paid',bill)
