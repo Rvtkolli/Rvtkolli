@@ -1,0 +1,30 @@
+#prparing grocery bill
+lc=100
+cc=200
+bc=400
+mc=500
+yc=600
+cuphno=input('enter customer phone no')
+cuname=input('enter customer name')
+cuaddr=input('enter customer address ')
+lq=int(input ('how many lays packets you want'))
+cq=int(input ('how many chocolate packets you want'))
+bq=int(input ('how many biscuit packets you want'))
+mq=int(input('how many maggi packets you want'))
+yq=int(input ('how many yippee packets you want'))
+bill=(lc*lq)+(cc*cq)+(bc*bq)+(mc*mq)+(yc*yq)
+if bill>=3000:
+   tax=(bill*5)/100
+elif bill>2000:
+   tax=(bill*7)/100
+elif bill>1000:
+   tax=(bill*10)/100
+elif bill>500:
+   tax=(bill*15)/100
+else:
+   tax-100
+tax=tax+bill
+print('customer name',cuname)
+print('customer phone no',cuphno)
+print('tax ',tax)
+print('bill is to be paid',bill)
