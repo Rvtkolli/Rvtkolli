@@ -1,0 +1,13 @@
+N = int(input("enter how many numbers"))
+smallest = 0
+largest = 0
+for i in range(N):
+   num = int(input("enter any number"))
+   if (i == 0):
+       smallest = num
+   if(num < smallest ):
+       smallest = num
+   if(num > largest):
+       largest = num
+print ("smallest is ",smallest)
+print ("largest is ",largest)
