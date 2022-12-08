@@ -1,0 +1,8 @@
+def findfactsum(N):
+ f=1
+ sum=o
+for i in range(1,N+1):
+    f=f*1
+    sum+=f
+    returnsum
+print('findfactsum(N)')
