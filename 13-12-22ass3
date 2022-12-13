@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+    n=int(input())
+    l=list(map(int,input().split()))
+    m=[]
+    for i in l:
+        if i not in m:
+            m.append(i)
+    m.sort(reverse=True)
+    print(m[1])
