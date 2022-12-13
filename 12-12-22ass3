@@ -1,0 +1,6 @@
+l=[]
+n=int(input())
+for i in range(n):
+    x=int(input('enter element'))
+    l.append(x)
+print(x)
