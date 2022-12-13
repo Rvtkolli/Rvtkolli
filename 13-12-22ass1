@@ -1,0 +1,7 @@
+ap=[]
+ap.append('kakinada')
+ap.append('vskp')
+ap.append('srikakulam')
+ap.append('amalapuram')
+ap.sort()
+print(ap)
