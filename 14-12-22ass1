@@ -1,0 +1,12 @@
+l=[]
+n=int(input())
+l=list(map(int, input ().split()))
+max=l[0]
+min=l[-1]
+for i in range(1,n):
+    if l[i] > max:
+       if l[-1] < min:
+          max=l[i]
+          max=l[-1]
+print(max)   
+print(min)
