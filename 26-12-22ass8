@@ -1,0 +1,11 @@
+def leap(y):
+  if y%4==0:
+   return 1
+  else:
+   return 0
+n=int(input ())
+m=int(input())
+while(n<m):
+  if(leap(n)==1):
+    print(n,end=' ')
+  n=n+1
