@@ -1,0 +1,15 @@
+n=int(input())
+x=input().split()
+l=[]
+for i in range(n):
+ l.append(int(x[i]))
+ c=0
+for i in range(0,n):
+   for j in range(i+1,n):
+      if l[i]==l[j]:
+        c=1
+        break
+if c==1:
+   print('Duplicate')
+else:
+   print('Unique')
