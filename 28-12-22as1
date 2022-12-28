@@ -1,0 +1,32 @@
+from tkinter import*
+def addNumber():
+    res=int(e1.get())+int(e2.get())
+    s.set(res)
+def subNumber():
+    res=int(e1.get())-int(e2.get())
+    s.set(res)
+def divNumber():
+    res=int(e1.get())/int(e2.get())
+    s.set(res)
+def mulNumber():
+    res=int(e1.get())*int(e2.get())
+    s.set(res)
+cal=Tk()
+s=StringVar()
+Label(cal,text='enter first number').grid(row=0,column=0)
+Label(cal,text='enter second number').grid(row=1,column=0)
+Label(cal,text='Result:').grid(row=2,column=0)
+result=Label(cal,text='',textvariable=s).grid(row=2,column=0)
+e1=Entry(cal)
+e2=Entry(cal)
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+b1=Button(cal,text='ADD',command=addNumber)
+b2=Button(cal,text='SUB',command=subNumber)
+b3=Button(cal,text='DIV',command=divNumber)
+b4=Button(cal,text='MUL',command=mulNumber)
+b1.grid(row=2,column=1)
+b2.grid(row=3,column=1)
+b3.grid(row=4,column=1)
+b4.grid(row=5,column=1)
+mainloop()
